@@ -1,0 +1,36 @@
+{
+  "name": "mishka",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^16"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\"",
+    "lint": "npm run editorconfig && npm run stylelint",
+    "build": "echo 'Build task'",
+    "start": "echo 'Start task'"
+  },
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/**/*.html",
+    "source/**/*.{pug,twig}",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "2.0.5",
+    "stylelint": "15.10.2",
+    "stylelint-config-htmlacademy": "2.0.4"
+  }
+}
